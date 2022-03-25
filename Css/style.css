@@ -1,0 +1,167 @@
+p {
+    color: red;
+    font-family: Verdana;
+    font-size:150%;
+  }
+  
+  .grid-container-price > div > p {
+    color: black;
+    font-family: Verdana;
+    font-size:50%;
+  }
+  
+  h1 {
+    color: green;
+  }
+  
+  body {
+    background-image: url('Taco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,99,71,0.5);
+  }
+  
+  .item1 { grid-area: Tacos; }
+  .item2 { grid-area: Beer; }
+  .item3 { grid-area: Wine; }	
+  .item4 { grid-area: Deserts; }	
+  .item5 { grid-area: Reservatios; }	
+  .item6 { grid-area: Menu; }	
+  .item7 { grid-area: price1; }
+  .item8 { grid-area: price2; }	
+  
+  .grid-container-menu {
+    display: grid;
+    grid-template-areas:
+      'Tacos Beer Wine Deserts Reservatios';
+    gap: 3px;
+    background-color: orange;
+    padding: 6px;
+  }
+  .grid-container-menu > div {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-areas:
+    'Menu Menu Menu price1 .'
+    'Menu Menu Menu price2 .';
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .grid-container > div {
+    background-color: green;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  
+  .item21 {
+    grid-area: rotiArea;
+  }
+  .item22 {
+    grid-area: textArea;
+    position: relative;
+    right: 100px;
+    font-size: 20px;
+    font-family: Verdana;
+  }
+  .grid-container-roti {
+    display: grid;
+    grid-template-areas:
+      'rotiArea textArea textArea textArea';
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .item11 {
+    grid-area: TacoImgArea;
+  }
+  
+  .grid-containertest {
+    display: grid;
+    grid-template-areas:
+      'TacoImgArea . . . .';
+    grid-gap: 2px;
+    background-color: yellow;
+    padding: 1px;
+  }
+  .grid-container1 {
+    display: grid;
+    grid-template-areas:
+      'TacoImgArea TacoImgArea TacoImgArea TacoImgArea'
+      'TacoImgArea TacoImgArea TacoImgArea TacoImgArea';
+    grid-gap: 2px;
+    background-color: yellow;
+    padding: 1px;
+  }
+  
+  .grid-container1 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .grid-container2 {
+    display: grid;
+    grid-template-areas:
+      'TacoImgArea TacoImgArea TacoImgArea TacoImgArea'
+      'TacoImgArea TacoImgArea TacoImgArea TacoImgArea';
+    grid-gap: 1px;
+    background-color: yellow;
+    padding: 1px;
+  }
+  
+  .grid-container2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  
+  .item111 { grid-area: menu; }
+  .item112 { grid-area: main; }
+  .item113 { grid-area: footer; }
+  
+  
+  .grid-container-price {
+    display: grid;
+    grid-template-areas:
+      
+      'menu menu menu menu main main'
+      'menu menu menu menu footer footer';
+    gap: 1px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-container-price > div:nth-child(2) {
+    background-color: yellow;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30px;
+  }
+  
+  .grid-container-price > div:nth-child(3) {
+    background-color: yellow;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30px;
+  }
+  
+  .item112, .item113 {
+    position: relative;
+    right: 100px;
+    font-size: 20px;
+    font-family: Verdana;
+  }
+  
+  
